@@ -1,25 +1,22 @@
 #include <stdio.h>
 /**
-* main - Entry point
+* main - main function
 *
-* Return: end program
+* Return: 0 (Success)
 */
 int main(void)
 {
-int i = 1;
-long int  num1 = 0;
-long int num2 = 1;
-long int sumPrevTwo = 0;
-long int sumEven = 0;
-long int maxFibTerm = 4000000;
-while (num1 < maxFibTerm && num2 < maxFibTerm)
+int n, s = 0;
+for (n = 0; n < 1024; ++n)
 {
-sumPrevTwo = num1 + num2;
-sumEven += (((sumPrevTwo % 2) == 0) ? sumPrevTwo : 0);
-num1 = num2;
-num2 = sumPrevTwo;
-i++;
+if ((n % 3) == 0 || (n % 5) == 0)
+{
+s = s + n;
 }
-printf("%ld\n", sumEven);
+else
+{
+}
+}
+printf("%d\n", s);
 return (0);
 }
