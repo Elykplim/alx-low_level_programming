@@ -1,1 +1,1 @@
-0x00. C - Hello, World
+Learning Low Level C Linux Programming
